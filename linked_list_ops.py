@@ -72,11 +72,11 @@ class LinkedList:# Creating Linked List class whose object will be the Linked Li
             prevNode = HeadNode
             HeadNode = HeadNode.next
         
-        if(HeadNode):
+        if(HeadNode == None):
             return "Item is not there"
-        
-        prevNode.next = HeadNode.next
-        HeadNode = None
+        else:
+            prevNode.next = HeadNode.next
+            HeadNode = None
 
 if __name__ == "__main__":
     list1 = LinkedList(); # Created list1 object of LinkedList Class.
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     list1.AtEnd("Me")
     list1.InBetween("minx");
     list1.PrintNodes(); # calling the function PrintNodes P.S don't forget the parenthesis. if you write a function without () it means you are passing it not calling it.
-    list1.RemoveNode("Keshav")
+    list1.RemoveNode("minx")
     list1.PrintNodes();
     list1.SearchNode("Nishchal")
 
