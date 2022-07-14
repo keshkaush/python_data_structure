@@ -1,3 +1,4 @@
+from collections import deque
 # breadth first search answer 2 type of questions:
 # 1. is there a path from node A to node B.
 # 2. if there a path then find the shortest path from node A to B.
@@ -15,3 +16,21 @@ graph["jonny"] = []
 graph["anuj"] = []
 graph["peggy"] = []
 
+def person_is_seller(name):
+    return name[-1] == "m"
+
+def search(name):
+    search_queue = deque()
+    search_queue += graph[name]
+    searched = []
+    while search_queue:
+        person = search_queue.popleft()
+        if not person in searched:
+            if person_is_seller(person):
+                print(f"{person} is the mango seller.")
+            else:
+                search_queue += graph[person]
+                searched.append(person)
+    return False
+
+search("you")
