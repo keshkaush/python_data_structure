@@ -1,3 +1,6 @@
+# quicksort complexity purely depends upon the pivot element that we choose
+# for average case the time complexity to sort is O(n*logn)
+# and for worst case the time complexity is O(n^2)
 def quicksort(arr):
     if len(arr) < 2:
         return arr
