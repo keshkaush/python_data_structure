@@ -68,4 +68,8 @@ print("input array:",arr2)
 shellSort(arr2,len(arr2))
 print("sorted array",arr2)
 
-# This code is contributed by Illion
+# The space complexity of the shell sort is O(1)
+
+#The worst-case complexity for shell sort is  O(n2)
+# best case complexity is Ω(n log(n))
+# Average Case Complexity: O(n*log n)
