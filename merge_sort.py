@@ -12,6 +12,8 @@
 #         merge(array, left, mid, right)
 # step 4: Stop
 
+# gives O(nlogn) time complexity and O(n) space complexity
+
 # code
 def mergeSort(arr):
 	if len(arr) > 1:
