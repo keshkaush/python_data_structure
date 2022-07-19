@@ -33,3 +33,8 @@ if __name__ == '__main__':
     sum = addBT(root) 
  
     print("Sum of all the nodes is:", sum)
+
+    #  Find sum of all left leaves in a given Binary Tree
+
+    # The idea is to traverse the tree, starting from root. For every node, check if its left subtree is a leaf. If it is, then add it to the result. 
+    
